@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">poetryLine</string>
+    <string name="app_homepage">首页</string>
+    <string name="app_sort">分类</string>
+    <string name="app_game">游戏</string>
+    <string name="app_community">社区</string>
+</resources>
