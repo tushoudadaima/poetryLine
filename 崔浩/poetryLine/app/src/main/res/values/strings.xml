@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">poetryLine</string>
+    <string name="app_homepage">首页</string>
+    <string name="app_sort">分类</string>
+    <string name="app_game">游戏</string>
+    <string name="app_community">社区</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_key_iat_show">iat_show</string>
+</resources>
