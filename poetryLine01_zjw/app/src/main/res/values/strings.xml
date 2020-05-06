@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">poetryLine</string>
+    <string name="app_homepage">首页</string>
+    <string name="app_sort">分类</string>
+    <string name="app_game">游戏</string>
+    <string name="app_community">社区</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="time_too_short">录音时间过短</string>
+
+    <string name="long_click_record">长按 录音</string>
+    <string name="hang_up_finsh">松开 结束</string>
+    <string name="release_cancel">松开 取消</string>
+
+    <string name="wang_zhi">http://192.168.101.7:8080/Poetry</string>
+    <string name="no_login">未登录</string>
+</resources>

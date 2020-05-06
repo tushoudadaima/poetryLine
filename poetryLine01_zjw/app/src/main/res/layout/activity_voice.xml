@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+
+        >
+        <ImageView
+            android:layout_width="27dp"
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_height="27dp"
+            android:src="@drawable/back5"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back"
+            android:text="《春思》大声读出来"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:id="@+id/tv_title"
+            />
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/share1"
+            android:id="@+id/share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/shadow"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/poetry"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="春思"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[唐]  李白"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="燕草如碧丝，秦桑低绿枝"
+            android:gravity="center"/>
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="当君怀归日，是妾断肠时"
+            android:gravity="center"/>
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="春风不相识，何事入罗帏"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/em_lv_recodeList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000"
+        android:listSelector="#0000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joins"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/shape">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我也来试试"
+                android:textSize="18dp"
+                android:layout_marginLeft="35dp"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/join"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:layout_alignParentRight="true"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <com.example.poetryline.detail.manager.AudioRecordButton
+            android:id="@+id/em_tv_btn"
+            android:layout_width="200dp"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="@string/long_click_record"
+            android:textColor="#fff"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
