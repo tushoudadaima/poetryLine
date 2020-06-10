@@ -1,0 +1,16 @@
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/jia1"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/jia2"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/jia3"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/jia4"
+        android:duration="80"/>
+</animation-list>

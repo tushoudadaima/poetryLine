@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/community_img_touxiang"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        >
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/community_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="昵称"/>
+        <TextView
+            android:id="@+id/community_body"
+            android:layout_below="@+id/community_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="具体内容"/>
+        <ImageView
+            android:id="@+id/community_img_peitu"
+            android:layout_below="@+id/community_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <View
+            android:id="@+id/community_fengexian1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/community_img_peitu"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:id="@+id/community_beiyong"
+            android:orientation="horizontal"
+            android:layout_below="@+id/community_fengexian1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@android:color/transparent"
+                android:id="@+id/button1"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@android:color/transparent"
+                android:id="@+id/button2"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@android:color/transparent"
+                android:id="@+id/button3"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/community_beiyong"
+            android:layout_height="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
+
+

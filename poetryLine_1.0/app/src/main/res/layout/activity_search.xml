@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="27dp"
+            android:id="@+id/back"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="27dp"
+            android:src="@drawable/back5"
+            />
+    <SearchView
+        android:layout_width="match_parent"
+        android:id="@+id/search_view"
+        android:queryHint="请输入想要查找的内容"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:background="@drawable/bac_shape_two"
+        android:iconifiedByDefault="false"
+       />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_below="@+id/search1"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/linearLayout_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/history_search"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="历史搜索"/>
+        <TextView
+            android:id="@+id/clear_search_history"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="清除所有记录"/>
+        <TextView
+            android:id="@+id/textView_noSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="没有历史记录"
+            android:layout_below="@+id/history_search"/>
+
+        <ListView
+            android:id="@+id/listView_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/history_search"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/left_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/activity_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/activity_homepage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="@string/app_homepage"
+                android:gravity="center"
+                android:drawableTop="@drawable/book"
+                android:background="@drawable/text_selector"/>
+            <TextView
+                android:id="@+id/activity_sort"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="@string/app_sort"
+                android:gravity="center"
+                android:drawableTop="@drawable/sort"
+                android:background="@drawable/text_selector"/>
+            <TextView
+                android:id="@+id/activity_game"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="@string/app_game"
+                android:gravity="center"
+                android:drawableTop="@drawable/fl"
+                android:background="@drawable/text_selector"/>
+            <TextView
+                android:id="@+id/activity_community"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="@string/app_community"
+                android:gravity="center"
+                android:drawableTop="@drawable/ye"
+                android:background="@drawable/text_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/main"
+        >
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#fff"
+           >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+
+                android:id="@+id/wode_shezhi">
+                <ImageView
+                    android:id="@+id/shezhi_img"
+                    android:layout_width="23dp"
+                    android:layout_height="33dp"
+                    android:src="@mipmap/wodeshezhi2"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="18dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingLeft="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/shezhi_img"
+                    android:text="设置"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_toEndOf="@+id/shezhi_img" />
+            </RelativeLayout>
+
+        </RelativeLayout>-->
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

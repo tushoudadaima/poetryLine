@@ -1,0 +1,29 @@
+package com.example.poetryline.adapter;
+
+import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
+public class FragmentAdapter extends FragmentPagerAdapter {
+
+    private List<Fragment> mList;
+
+    public FragmentAdapter(FragmentManager fragmentManager,List<Fragment> list){
+        super(fragmentManager);
+        this.mList = list;
+    }
+
+    @Override
+    public int getCount() {
+        return mList.size();
+    }
+
+    @NonNull
+    @Override
+    public Fragment getItem(int position) {
+        return mList.get(position);
+    }
+}

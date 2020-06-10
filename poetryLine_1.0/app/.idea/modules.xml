@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="poetryLine/app" />
+      <module fileurl="file://$PROJECT_DIR$/../poetryLine.iml" filepath="$PROJECT_DIR$/../poetryLine.iml" group="poetryLine" />
+      <module fileurl="file://$PROJECT_DIR$/../simplelocation/simplelocation.iml" filepath="$PROJECT_DIR$/../simplelocation/simplelocation.iml" group="poetryLine/simplelocation" />
+    </modules>
+  </component>
+</project>

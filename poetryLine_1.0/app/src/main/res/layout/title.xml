@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gufeng">
+    <TextView
+        android:id="@+id/tv_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:background="@drawable/bt_shape">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/tv_sign"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview"
+        android:layout_marginTop="80dp"
+        android:lineHeight="30dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:id="@+id/liner_option"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tv_optionA"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_shape"
+            android:gravity="center"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_optionB"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_shape"
+            android:gravity="center"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_optionC"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_shape"
+            android:gravity="center"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_optionD"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_shape"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sure"
+        android:visibility="invisible"
+        android:text="结算"
+        android:textColor="#ffffff"
+        android:layout_below="@id/liner_option"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

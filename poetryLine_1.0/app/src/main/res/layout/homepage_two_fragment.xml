@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/tianshidili"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/tianshidili_beijing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tianshidili_mangzhong2"
+        android:alpha="0.3"/>
+    <LinearLayout
+        android:id="@+id/nongli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:id="@+id/tv_lauar"/>
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:text="节日 节气"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_festivals"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="今日节日"
+                android:gravity="center"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tv_solarTerms"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="今日节气"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nongli"
+        android:id="@+id/dingwei"
+        >
+        <TextView
+            android:id="@+id/tv_simple_address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="0dp"
+            android:text=""
+            android:textColor="#787878"
+            android:textSize="14sp"
+
+            />
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dingwei"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/city_result1"
+        android:text="今日天气：需获取定位"
+        android:textSize="14sp"
+        android:layout_below="@+id/dingwei"
+
+        />
+    <RelativeLayout
+        android:id="@+id/tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/city_result1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="为您精选"/>
+        <TextView
+            android:id="@+id/changePoem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="换一首"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3"/>
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textSize="28sp"
+            android:textColor="#8C8C8C"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/item_dyAndAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="朝代/作者"
+            android:textSize="18sp"
+            android:textColor="#FFAB30" />
+        <TextView
+            android:id="@+id/item_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="内容"
+            android:textSize="25sp"
+            android:textColor="#7A7A7A"/>
+    </LinearLayout>
+
+</RelativeLayout>
