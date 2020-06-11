@@ -10,12 +10,15 @@ import android.widget.Toast;
  * 邮箱：wgyscsf@163.com
  * 博客：http://blog.csdn.net/wgyscsf
  */
+
+//此类无用 功能迁移至 collect/database/MyDB
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final int VERSION = 1;
 
     private static final String DATABASE_NAME = "test.db";
     private static final int DATABASE_VERSION = 1;
+
 
     public DBHelper(Context context) {
         //CursorFactory设置为null,使用默认值

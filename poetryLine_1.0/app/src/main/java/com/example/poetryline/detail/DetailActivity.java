@@ -132,6 +132,11 @@ public class DetailActivity extends AppCompatActivity {
 
     private ImageView shoucang;
 
+    private int recLen = 0;
+
+    private Runnable runnable;
+
+
 
     @SuppressLint("HandlerLeak")
     @Override
@@ -215,7 +220,8 @@ public class DetailActivity extends AppCompatActivity {
                         ViewGroup.LayoutParams paramsq=gunlun2.getLayoutParams();
                         paramsq.height=(Integer)msg.obj;
                         gunlun2.setLayoutParams(paramsq);
-
+                        break;
+                        
                 }
             }
         };
@@ -716,7 +722,20 @@ public class DetailActivity extends AppCompatActivity {
         if(!animationDrawable.isRunning()){
             //开启帧动画
             animationDrawable.start();
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if(poetryname==null){
+                        Toast.makeText(getApplicationContext(),"抱歉 未找到此诗的详细信息",Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+
+                }
+            }, 5000);//5秒后执行Runnable中的run方法 退出详情activity
+
         }
+
 
 
 
